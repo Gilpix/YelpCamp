@@ -1,0 +1,18 @@
+<%- include("../partials/header") %>
+
+<div class="container text-center py-5">
+    <div class="vertical-center">
+        <h2 class="login-register-head">Edit <%= campground.name %> CampGround</h2>
+        <div class="add-camp-card text-center p-2">
+                <form action="/campgrounds/<%= campground._id %>?_method=PUT"" method="POST">
+                    <input class="form-control text-center my-2" type="text" name="campground[name]" value="<%= campground.name %>"></input>
+                    <input class="form-control text-center my-2" type="number" name="campground[price]" value="<%= campground.price %>" min="0.01" step="0.01"></input>
+                    <input class="form-control text-center my-2" type="text" name="campground[image]" value="<%= campground.image %>"></input>
+                    <input class="form-control text-center my-2" type="text" name="campground[description]" value="<%= campground.description %>"></input>
+                    <button class="btn btn-md btn-danger btn-block my-2" type="submit">SUBMIT</button>
+                </form>
+                <a type="submit" class="anchor-link" href="/campgrounds">Go Back</a>
+        </div>    
+    </div>
+</div>
+<%- include("../partials/footer") %>

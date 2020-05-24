@@ -1,0 +1,245 @@
+
+body{
+    background:#FFEDF2 !important;
+}
+
+#logo{
+    width:120px;
+    height:40px;
+}
+
+.card-body{
+    padding: 0 0 !important;
+}
+.navbar a{
+    color:white;
+    text-transform:uppercase;
+    font-weight:bolder;
+    letter-spacing:1.5px;
+}
+.img-thumbnail{
+    box-shadow:0 2px 7px rgba(0, 0, 0, .29);
+}
+
+.navbar a:hover{
+    color:black;
+}
+
+
+#navbar-toggler{
+    outline:none;
+}
+.navbar-toggler-icon{
+     color:white !important;
+    outline:none;
+    background-color: white;
+}
+
+
+.row{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.vertical-center{
+      position: relative;
+    top: 50%;
+    transform: translateY(30%);
+}
+.vertical-center-forms{
+      position: relative;
+    top: 50%;
+    transform: translateY(50%);
+}
+
+.login-register-head{
+    letter-spacing:.71px;
+    font-family: "Raleway-bold";
+    font-weight: 700;
+}
+
+.jumbotron {
+    padding:9% 0 !important;
+    color:white;
+    border-radius:0 !important;
+    border:none;
+    position: relative; 
+    background-image:url("https://images.wallpaperscraft.com/image/bonfire_people_dark_149072_3840x2400.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  background-attachment: fixed;
+  background-position: right 0px top -210px; 
+}
+
+#welcome-camp{
+    font-size:2.5rem;
+}
+#welcome-desc{
+    font-size:1rem;
+}
+
+.all-camps-heading{
+    font-family: "Arial";
+    font-weight: 700;
+    text-transform:uppercase;
+    color:#191919;
+}
+
+.search-div{
+    width: 100%;
+    position: absolute; 
+    bottom: 15px; 
+    right:0;
+   
+}
+
+form.search input[type=text] {
+  padding: 6px 6px 6px 12px;
+  font-size: 15px;
+  outline:none;
+  border: 1px solid #e32636;
+  float: left;
+  border-top-left-radius:20px;
+  border-bottom-left-radius:20px;
+  color:white;
+  width: 80%;
+  background: transparent;
+}
+
+form.search button {
+  float: left;
+  width: 20%;
+  padding: 4.5px;
+  background: #e32636;
+  color: white;
+  border: none;
+  border-top-right-radius:20px;
+  border-bottom-right-radius:20px;
+  outline:none;
+  font-size: 17px;
+  border: 1px solid #e32636;
+  cursor: pointer;
+}
+
+form.search button:hover {
+  background: #f35636;
+}
+
+form.search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #welcome-camp{
+    font-size:1.5rem;
+}
+#welcome-desc{
+    font-size:.71rem;
+}
+.all-camps-heading{
+    font-size:1.3rem;
+}
+.jumbotron {
+    padding:15% 0 !important;
+}
+
+form.search input[type=text] {
+ padding: 6px 6px 6px 12px;
+  font-size: 10px;
+}
+form.search button {
+    font-size: 12.1px;
+}
+
+}
+
+
+.add-camp-card{
+     margin: 0 auto;
+        float: none;
+        margin-bottom: 10px;
+        width:31%;
+    min-width:320px;
+}
+
+.sign-form{
+     margin: 0 auto;
+        float: none;
+        margin-bottom: 10px;
+        width:31%;
+    min-width:320px;
+}
+
+.delete-form{
+    display:inline;
+}
+
+
+.anchor-link{
+    text-decoration:none;
+    color:#e32636;
+    outline:none;
+}
+
+.anchor-link:hover{
+    text-decoration:none;
+    color:#B22222;
+}
+
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.rating>input {
+    display: none
+}
+
+.rating>label {
+    position: relative;
+    width: 1em;
+    font-size: 2rem;
+    color: #e32636;
+    cursor: pointer
+}
+
+.rating>label::before {
+    content: "\2605";
+    position: absolute;
+    opacity: 0
+}
+
+.rating>label:hover:before,
+.rating>label:hover~label:before {
+    opacity: 1 !important
+}
+
+.rating>input:checked~label:before {
+    opacity: 1
+}
+
+.rating:hover>input:checked~label:before {
+    opacity: 0.4
+}
+
+
+.footer{
+    padding: 27px 20px 10px 20px ;
+    margin-top:40px;
+    background:#e32636;
+    font-size: 12pt;
+    color: #3D3D3D;
+    letter-spacing:.71px;
+    font-family: "Raleway-bold";
+    font-weight: 500;
+    
+}
+
+
+

@@ -1,0 +1,30 @@
+<%- include("../partials/header") %>
+
+<div class="container text-center py-5">
+    <div class="vertical-center">
+        <h2>EditComment to </h2>
+        <div class="add-camp-card text-center p-2">
+                <form action="/campgrounds/<%= campId%>/comments/<%= comment._id %>?_method=PUT" method="POST">
+                    <div class="rating mr-0"> 
+                        <input type="radio" name="rating" value="5" id="5">
+                        <label for="5">☆</label> 
+                        <input type="radio" name="rating" value="4" id="4">
+                        <label for="4">☆</label> 
+                        <input type="radio" name="rating" value="3" id="3">
+                        <label for="3">☆</label> 
+                        <input type="radio" name="rating" value="2" id="2">
+                        <label for="2">☆</label> 
+                        <input type="radio" name="rating" value="1" id="1">
+                        <label for="1">☆</label>
+                    </div>
+                    <input class="form-control text-center my-2" type="text" name="comment[text]" value="<%= comment.text%>"></input>
+                    <!--<input class="form-control text-center my-2" type="text" name="comment[author]" placeholder="author"></input>-->
+                    <button class="btn btn-md btn-danger btn-block my-2" type="submit">SUBMIT</button>
+                </form>
+                <a type="submit" class="anchor-link" href="/campgrounds">Go Back</a>
+        </div>    
+    </div>
+</div>
+    
+
+<%- include("../partials/footer") %>
